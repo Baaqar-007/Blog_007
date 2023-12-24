@@ -43,8 +43,24 @@ body {
   
   .article-content {
     white-space: pre-line;
+    overflow-wrap: break-word; /* As a backup for word-wrap */
+    overflow: hidden; /* Hide the overflow */
+    max-width: 55ch; /* Make the max-width dynamic */
+    margin-right: 10px; /* Add a right margin */
+    white-space: pre-line;
   }
-  
+  .article-content-home {
+    white-space: pre-line;
+    word-wrap: break-word; /* Break the word at the end of the line */
+    display: -webkit-box; /* Use the Webkit CSS engine */
+        -webkit-line-clamp: 5; /* Limit to 5 lines */
+        -webkit-box-orient: vertical; /* Orient the lines vertically */
+    overflow-wrap: break-word; /* As a backup for word-wrap */
+    text-overflow: ellipsis; /* Use an ellipsis when the text overflows */
+    overflow: hidden; /* Hide the overflow */
+    max-width: 55ch; /* Limit the width to 50 characters */
+
+}
   .article-img {
     height: 65px;
     width: 65px;
