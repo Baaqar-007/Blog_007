@@ -1,13 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
 <article class="media content-section">
+  <img class ="rounded-circle article-img" src="{{url_for('static', filename ='profile_pics/'+ post.author.image_file)}}" style="width: 60px; height: 60px;">
     <div class="media-body">
         <div class="article-metadata" style="display: flex; align-items: center; justify-content: space-between;">
             <div style="display: flex; align-items: center;">
-                <img class ="rounded-circle article-img" src="{{url_for('static', filename ='profile_pics/'+ post.author.image_file)}}" style="width: 70px; height: 70px;">
                 <div style="margin-left: 10px;">
                     <a class="mr-2" style="font-size:larger; text-decoration: none; margin-top: 10px;" href="#">{{post.author.username }}</a>
-                    <br>
                     <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
                 </div>
             </div>

@@ -48,8 +48,10 @@ body {
     max-width: 55ch; /* Make the max-width dynamic */
     margin-right: 10px; /* Add a right margin */
     white-space: pre-line;
+    margin-left: 10px;
   }
   .article-content-home {
+    margin-left: 10px;
     white-space: pre-line;
     word-wrap: break-word; /* Break the word at the end of the line */
     display: -webkit-box; /* Use the Webkit CSS engine */
