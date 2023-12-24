@@ -51,7 +51,6 @@ body {
     margin-left: 10px;
   }
   .article-content-home {
-    margin-left: 10px;
     white-space: pre-line;
     word-wrap: break-word; /* Break the word at the end of the line */
     display: -webkit-box; /* Use the Webkit CSS engine */
@@ -60,7 +59,7 @@ body {
     overflow-wrap: break-word; /* As a backup for word-wrap */
     text-overflow: ellipsis; /* Use an ellipsis when the text overflows */
     overflow: hidden; /* Hide the overflow */
-    max-width: 55ch; /* Limit the width to 50 characters */
+    max-width: 39ch; /* Limit the width to 50 characters */
 
 }
   .article-img {
