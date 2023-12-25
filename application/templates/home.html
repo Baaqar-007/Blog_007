@@ -8,6 +8,7 @@
                 <div class="article-metadata" style="display: flex; align-items: center;">
                     <div style="margin-left: 10px;">
                         <a class="mr-2" style="font-size:larger; text-decoration: none; margin-top: 10px;" href="{{url_for('user_posts', username = post.author.username)}}">{{post.author.username }}</a>
+                        <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
                     </div>
                 </div>
                 <h2><a class="article-title" style="text-decoration: none;" href="{{url_for('post', post_id=post.id)}}">{{ post.title }}</a></h2>
